@@ -1,7 +1,7 @@
 var data;
 function getname(q) {
   $.get(
-    "http://www.omdbapi.com/?t=" + q + "&apikey=b958bc89",
+    "https://www.omdbapi.com/?t=" + q + "&apikey=b958bc89",
     function (rawdata) {
       var rawstring = JSON.stringify(rawdata);
       data = JSON.parse(rawstring);
